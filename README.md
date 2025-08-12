@@ -45,32 +45,21 @@ Histórico profissional e acadêmico, destacando funções, responsabilidades e 
 
 ---
 
-## Estrutura Inicial do Projeto
+## Estrutura Atual do Projeto
 ```plaintext
-📦 
-├── backend
-│   ├── server.js
-│   ├── routes
-│   │   └── contact.js
-│   ├── controllers
-│   │   └── contactController.js
-│   ├── package.json
-│   └── .env
-├── frontend
-│   ├── public
-│   │   ├── index.html
-│   │   └── favicon.ico
-│   ├── src
-│   │   ├── components
-│   │   │   ├── Header.jsx
-│   │   │   ├── Footer.jsx
-│   │   │   ├── Contact.jsx
-│   │   │   ├── About.jsx
-│   │   │   ├── Projects.jsx
-│   │   │   └── Experience.jsx
-│   │   ├── styles
-│   │   │   └── global.css
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── package.json
+📦 Projeto-portifolio
+├── src
+│   ├── back
+│   │   ├── README.md
+│   │   └── ...código do back-end (Node.js)
+│   └── front
+│       ├── README.md
+│       └── ...código do front-end (Vite)
+├── assets
+│   └── ...imagens do protótipo
+├── docs
+│   └── readme.md
 └── README.md
+```
+
+O front-end agora utiliza Vite e está localizado em `src/front`. O back-end está em `src/back`.

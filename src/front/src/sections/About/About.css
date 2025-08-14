@@ -1,0 +1,29 @@
+.section {
+    padding: 100px 50px;
+  }
+  
+  #about {
+    background-color: #f0f0f0;
+  }
+  
+  .about-content {
+    position: relative;
+    max-width: 600px;
+  }
+  
+  .about-content p {
+    position: relative;
+    z-index: 2;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .about-overlay-box {
+    position: absolute;
+    top: -20px;
+    right: -100px;
+    width: 300px;
+    height: 200px;
+    background-color: rgba(220, 220, 220, 0.5);
+    z-index: 1;
+  }

@@ -1,0 +1,28 @@
+#projects {
+    background-color: #e9e9e9;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .project-card {
+    background-color: #f0f0f0;
+  }
+  
+  .project-image-placeholder {
+    height: 250px;
+    background-color: #888;
+    border: 2px solid #333; /* Visual representation of the X */
+  }
+  
+  .project-text-placeholder {
+    height: 15px;
+    background-color: #b0b0b0;
+    margin: 10px;
+  }
+  .project-text-placeholder.short { width: 60%; }
+  .project-text-placeholder.long { width: 90%; }

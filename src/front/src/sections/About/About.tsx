@@ -1,14 +1,35 @@
+import { useTranslation } from 'react-i18next';
 import './About.css';
 
 function About() {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <section id="about" className="section">
-      <h2>SOBRE MIM</h2>
+      <div className="language-selector-nav">
+        <button
+          className={i18n.language === 'pt' ? 'active' : ''}
+          onClick={() => changeLanguage('pt')}
+        >
+          Português
+        </button>
+        <button
+          className={i18n.language === 'en' ? 'active' : ''}
+          onClick={() => changeLanguage('en')}
+        >
+          English
+        </button>
+      </div>
+      <h2>{t('about_title')}</h2>
       <div className="about-content">
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          {t('about_text')}
         </p>
-        <div className="about-overlay-box"></div>
+        {/* <div className="about-overlay-box"></div> */}
       </div>
     </section>
   );

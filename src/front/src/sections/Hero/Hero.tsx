@@ -1,19 +1,21 @@
 import './Hero.css';
-
+import suaFoto from '../../assets/profile_picture.jpg';
 function Hero() {
   return (
     <section id="hero" className="hero-section">
       <div className="hero-content">
+
         <div className="hero-text">
-          <h1>LOREM IPSUM</h1>
-          <div className="social-icons-placeholder">
-            <span>●</span><span>●</span><span>●</span>
-          </div>
-          <p>Lorem ipsum placeholder text...</p>
+          <h1>[Seu nome aqui TESTE TESTE]</h1>
+          
+          <p>Engenheiro de Software.</p>
         </div>
-        <div className="hero-image-placeholder"></div>
+        {/* Adicione a tag <img> aqui */}
+        <div className="hero-image-container"> 
+          <img src={suaFoto} alt="Uma foto sua" className="hero-image" />
+        </div>
       </div>
-      <div className="scroll-down">Scroll Down ↓</div>
+      <a href="#about" className="scroll-down">Veja Mais! ↓</a>
     </section>
   );
 }

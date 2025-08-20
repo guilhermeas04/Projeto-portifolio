@@ -1,11 +1,134 @@
 #experience {
-    background-color: #f0f0f0;
+  background-color: #ffffff;
+}
+
+.experience-list {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  margin-bottom: 80px;
+}
+
+.experience-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.experience-text {
+  flex: 1;
+}
+
+.company-name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.role {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #666;
+}
+
+.period {
+  display: block;
+  font-size: 1rem;
+  color: #888;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.experience-image {
+  flex: 1;
+  text-align: center;
+}
+
+.experience-image-placeholder {
+  width: 300px;
+  height: 200px;
+  background-color: #333;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+/* Alternância entre direita e esquerda */
+.experience-item.reversed .experience-content {
+  flex-direction: row-reverse;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .experience-content {
+    flex-direction: column !important;
+    gap: 30px;
+    text-align: center;
   }
-  
+
   .experience-item {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
-  
-  .experience-item h3 {
-    margin-bottom: 5px;
+
+  .company-name {
+    font-size: 1.8rem;
   }
+
+  .role {
+    font-size: 1.1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .experience-image-placeholder {
+    width: 250px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-item {
+    margin-bottom: 50px;
+  }
+
+  .company-name {
+    font-size: 1.6rem;
+  }
+
+  .technologies {
+    justify-content: center;
+  }
+
+  .experience-image-placeholder {
+    width: 200px;
+    height: 120px;
+  }
+}

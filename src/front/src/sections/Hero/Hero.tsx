@@ -1,19 +1,31 @@
-import './Hero.css';
+import "./Hero.css";
+import FadeInWrapper from "../../components/FadeInWrapper";
+import { useLanguage } from "../../hooks/useLanguage";
 
 function Hero() {
+  const { t } = useLanguage();
+
   return (
     <section id="hero" className="hero-section">
       <div className="hero-content">
-        <div className="hero-text">
-          <h1>LOREM IPSUM</h1>
-          <div className="social-icons-placeholder">
-            <span>●</span><span>●</span><span>●</span>
+        <FadeInWrapper delay={200}>
+          <div className="hero-text">
+            <h1>{t.hero.title}</h1>
+            <div className="social-icons-placeholder">
+              <span>●</span>
+              <span>●</span>
+              <span>●</span>
+            </div>
+            <p>{t.hero.subtitle}</p>
           </div>
-          <p>Lorem ipsum placeholder text...</p>
-        </div>
-        <div className="hero-image-placeholder"></div>
+        </FadeInWrapper>
+        <FadeInWrapper delay={400}>
+          <div className="hero-image-placeholder"></div>
+        </FadeInWrapper>
       </div>
-      <div className="scroll-down">Scroll Down ↓</div>
+      <FadeInWrapper delay={600}>
+        <div className="scroll-down">{t.hero.scrollDown}</div>
+      </FadeInWrapper>
     </section>
   );
 }

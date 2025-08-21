@@ -1,18 +1,89 @@
 .contact-section {
-    background-color: #282828;
-    color: #f0f0f0;
-    padding: 60px 50px;
-  }
-  
-  .contact-section h2 {
-    color: #fff;
-  }
-  
-  .contact-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .contact-section li {
-    margin-bottom: 15px;
-  }
+  background-color: #282828;
+  color: #f0f0f0;
+  padding: 50px 50px;
+}
+
+.contact-section h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contact-content-wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.contact-list {
+  flex: 1; /* Coluna da esquerda, menos espaço */
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.contact-list a {
+  color: #f0f0f0;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 1.1rem;
+}
+
+.contact-list a:hover {
+  color: #1da1f2;
+}
+
+.contact-form {
+  flex: 1;        /* ocupa todo o espaço que sobra */
+  max-width: 900px; /* limite de largura */
+  margin-left: auto; /* garante que grude na direita */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #333;
+  border: 1px solid #555;
+  color: #f0f0f0;
+  font-size: 14px;
+  font-family: inherit;
+  width: 100%; /* campos acompanham a largura do form */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #1da1f2;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form button {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.contact-form button:hover {
+  background-color: #0d8ddb;
+}
+
+.form-title {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}

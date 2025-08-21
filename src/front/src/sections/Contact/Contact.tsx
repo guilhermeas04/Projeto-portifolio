@@ -77,19 +77,6 @@ function Contact() {
           
         </FadeInWrapper>
       </div>
-      <FadeInWrapper delay={200}>
-        <ul>
-          <li>
-            <strong>in</strong> linkedin.com/user
-          </li>
-          <li>
-            <strong>✉</strong> email@email.com.br
-          </li>
-          <li>
-            <strong>gh</strong> github.com/user
-          </li>
-        </ul>
-      </FadeInWrapper>
     </footer>
   );
 }

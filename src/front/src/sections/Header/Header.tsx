@@ -1,16 +1,47 @@
-import { Link } from 'react-scroll';
-import './Header.css';
+import { Link } from "react-scroll";
+import "./Header.css";
+import FadeInWrapper from "../../components/FadeInWrapper";
+import { useLanguage } from "../../hooks/useLanguage";
 
 function Header() {
+  const { t, language, toggleLanguage } = useLanguage();
+
   return (
     <header className="header">
-      <div className="logo">[X]</div>
-      <nav>
-        <Link to="about" spy={true} smooth={true} duration={500}>SOBRE MIM</Link>
-        <Link to="projects" spy={true} smooth={true} duration={500}>PROJETOS</Link>
-        <Link to="experience" spy={true} smooth={true} duration={500}>EXPERIÊNCIAS</Link>
-      </nav>
-      <a href="#contact" className="contact-link">Fale Comigo →</a>
+      <FadeInWrapper>
+        <div className="logo">[X]</div>
+      </FadeInWrapper>
+      <FadeInWrapper delay={200}>
+        <nav>
+          <Link to="about" spy={true} smooth={true} duration={500}>
+            {t.header.about}
+          </Link>
+          <Link to="projects" spy={true} smooth={true} duration={500}>
+            {t.header.projects}
+          </Link>
+          <Link to="experience" spy={true} smooth={true} duration={500}>
+            {t.header.experiences}
+          </Link>
+        </nav>
+      </FadeInWrapper>
+      <div className="header-right">
+        <FadeInWrapper delay={300}>
+          <button
+            className="language-toggle"
+            onClick={toggleLanguage}
+            aria-label={`Switch to ${
+              language === "pt" ? "English" : "Português"
+            }`}
+          >
+            {language === "pt" ? "EN" : "PT"}
+          </button>
+        </FadeInWrapper>
+        <FadeInWrapper delay={400}>
+          <a href="#contact" className="contact-link">
+            {t.header.contactMe}
+          </a>
+        </FadeInWrapper>
+      </div>
     </header>
   );
 }

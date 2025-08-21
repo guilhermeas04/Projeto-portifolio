@@ -9,14 +9,14 @@ const ptTranslations: Translations = {
     contactMe: "Fale Comigo →",
   },
   hero: {
-    title: "LOREM IPSUM",
-    subtitle: "Lorem ipsum placeholder text...",
-    scrollDown: "Scroll Down ↓",
+    title: "[Seu nome aqui]",
+    subtitle: "Engenheiro de software",
+    scrollDown: "Saiba Mais ↓",
   },
   about: {
     title: "SOBRE MIM",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Sobre mim pt-br",
   },
   experience: {
     title: "EXPERIÊNCIAS",
@@ -59,14 +59,14 @@ const enTranslations: Translations = {
     contactMe: "Contact Me →",
   },
   hero: {
-    title: "LOREM IPSUM",
-    subtitle: "Lorem ipsum placeholder text...",
+    title: "[Your name here]",
+    subtitle: "Software Engineer",
     scrollDown: "Scroll Down ↓",
   },
   about: {
     title: "ABOUT ME",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "About me english",
   },
   experience: {
     title: "EXPERIENCE",

@@ -2,6 +2,7 @@ import { Link } from "react-scroll";
 import "./Header.css";
 import FadeInWrapper from "../../components/FadeInWrapper";
 import { useLanguage } from "../../hooks/useLanguage";
+import HeaderIcon from "../../assets/HeaderIcon.png";
 
 function Header() {
   const { t, language, toggleLanguage } = useLanguage();
@@ -9,7 +10,13 @@ function Header() {
   return (
     <header className="header">
       <FadeInWrapper>
-        <div className="logo">[X]</div>
+        <div className="logo">
+          <img
+            src={HeaderIcon}
+            alt="Logo"
+            style={{ height: "64px", maxHeight: "100%", width: "auto" }}
+          />
+        </div>
       </FadeInWrapper>
       <FadeInWrapper delay={200}>
         <nav>

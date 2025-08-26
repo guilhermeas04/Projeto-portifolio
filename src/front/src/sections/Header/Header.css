@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #ffffff;
+  background-color: #181818;
   position: fixed;
   width: 100%;
   top: 0;
@@ -19,13 +19,13 @@
 .header nav a {
   margin: 0 15px;
   cursor: pointer;
-  color: #333;
+  color: #dad9d7;
   text-decoration: none;
   font-weight: 500;
 }
 
 .header nav a:hover {
-  color: #007bff;
+  color: #dad9d7;
 }
 
 .header-right {
@@ -36,8 +36,8 @@
 
 .language-toggle {
   background: none;
-  border: 2px solid #333;
-  color: #333;
+  border: 2px solid #dad9d7;
+  color: #dad9d7;
   padding: 8px 16px;
   border-radius: 20px;
   font-weight: 600;
@@ -48,8 +48,8 @@
 }
 
 .language-toggle:hover {
-  background-color: #333;
-  color: #ffffff;
+  background-color: #dad9d7;
+  color: #212121;
   transform: scale(1.05);
 }
 
@@ -59,12 +59,12 @@
 
 .header .contact-link {
   font-weight: 500;
-  color: #333;
+  color: #dad9d7;
   text-decoration: none;
 }
 
 .header .contact-link:hover {
-  color: #007bff;
+  color: #dad9d7;
 }
 
 /* Responsividade */

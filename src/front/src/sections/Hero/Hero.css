@@ -1,31 +1,38 @@
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 0 50px;
-    background-color: #ffffff;
-    padding-top: 80px; /* Space for fixed header */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 50px;
+  background-color: #181818;
+  padding-top: 80px; /* Space for fixed header */
   }
   
   .hero-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-  }
-  
-  .hero-text h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 48px;
+}
+
+.hero-text {
+  margin-right: 64px;
+}
+
+.hero-text h1 {
     font-size: 4rem;
     margin: 0;
+    color: #dad9d7;
   }
   
   .hero-image-placeholder {
     width: 150px;
     height: 150px;
-    background-color: #333;
+  background-color: #dad9d7;
     border-radius: 50%;
   }
   
@@ -37,9 +44,11 @@
   /* Container que controla a área da imagem */
 .hero-image-container {
   /* Define as dimensões do contêiner */
-  width: 300px;
-  height: 300px; 
-  /* Outros estilos, como sombra ou borda */
+  width: 700px;
+  height: 700px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* A imagem em si */
@@ -48,7 +57,7 @@
   width: 100%;
   height: 100%;
   /* Garante que a imagem preencha o espaço sem ser distorcida */
-  object-fit: cover;
+  object-fit: contain;
   /* Opções adicionais como borda arredondada */
-  border-radius: 50%;
+  border-radius: 0;
 }

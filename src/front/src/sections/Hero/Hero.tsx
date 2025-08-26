@@ -23,12 +23,7 @@ function Hero() {
           </div>
         </FadeInWrapper>
       </div>
-      <FadeInWrapper delay={600}>
-        {/* O link de rolagem agora usa a tradução */}
-        <a href="#about" className="scroll-down">
-          {t.hero.scrollDown}
-        </a>
-      </FadeInWrapper>
+      {/* Removido o botão/link "saiba mais" */}
     </section>
   );
 }

@@ -3,12 +3,17 @@
   }
   
   #about {
-    background-color: #f0f0f0;
+    background-color: #212121;
+    color: #dad9d7;
   }
   
   .about-content {
     position: relative;
-    max-width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    max-width: 1100px;
+    justify-content: flex-start;
   }
   
   .about-content p {
@@ -16,6 +21,7 @@
     z-index: 2;
     font-size: 1.1rem;
     line-height: 1.6;
+    color: #dad9d7;
   }
   
   .about-overlay-box {
@@ -24,7 +30,7 @@
     right: -100px;
     width: 300px;
     height: 200px;
-    background-color: rgba(220, 220, 220, 0.5);
+    background-color: rgba(33, 33, 33, 0.5);
     z-index: 1;
   }
 
@@ -33,7 +39,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    background-color: #e9e9e9;
+    background-color: #232323;
     border-radius: 5rem;
     padding: 5px;
     max-width: 250px;
@@ -48,21 +54,30 @@
     padding: 10px 20px;
     cursor: pointer;
     font-weight: bold;
-    color: black;
+  color: #dad9d7;
     transition: all 0.3s ease;
     border-radius: 5px;
   }
   
   .language-selector-nav button:hover {
-  background-color: black; /* Cor de fundo ao passar o mouse */
-  color: white; /* Cor do texto ao passar o mouse, se desejar */
+  background-color: #dad9d7; /* Cor de fundo ao passar o mouse */
+  color: #212121; /* Cor do texto ao passar o mouse, se desejar */
       border-radius: 5rem;
 
 }
   
   .language-selector-nav button.active {
-    background-color: black;
-    color: #ffffff;
+  background-color: #dad9d7;
+  color: #212121;
         border-radius: 5rem;
 
+  }
+
+  .about-header-img {
+    max-width: 480px;
+    min-width: 320px;
+    height: auto;
+    border-radius: 16px;
+    margin-left: auto;
+    display: block;
   }

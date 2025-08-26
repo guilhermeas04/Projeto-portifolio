@@ -6,6 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  background-color: #212121;
+  color: #dad9d7;
 }
 
 .App {
@@ -30,6 +32,8 @@ h2 {
   /* Use percentage for better responsiveness */
   max-width: 1200px;
   margin: 0 auto;
+  border-top: 2px solid #232323;
+  background-color: #242424;
 }
 
 /* Fade in wrapper styles */

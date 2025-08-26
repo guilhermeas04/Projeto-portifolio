@@ -1,6 +1,7 @@
 import "./About.css";
 import FadeInWrapper from "../../components/FadeInWrapper";
 import { useLanguage } from "../../hooks/useLanguage";
+import AboutHeaderImg from '../../assets/AboutHeader.png';
 
 function About() {
   const { t } = useLanguage();
@@ -13,6 +14,7 @@ function About() {
       <FadeInWrapper delay={200}>
         <div className="about-content">
           <p>{t.about.description}</p>
+          <img src={AboutHeaderImg} alt="About Header" className="about-header-img" />
         </div>
       </FadeInWrapper>
     </section>

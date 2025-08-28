@@ -1,36 +1,39 @@
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 0 50px;
-    background-color: #ffffff;
-    padding-top: 80px; /* Space for fixed header */
-  }
-  
-  .hero-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-  }
-  
-  .hero-text h1 {
-    font-size: 4rem;
-    margin: 0;
-  }
-  
-  .hero-image-placeholder {
-    width: 150px;
-    height: 150px;
-    background-color: #333;
-    border-radius: 50%;
-  }
-  
-  .scroll-down {
-    position: absolute;
-    bottom: 20px;
-    left: 50px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 50px;
+  background-color: #ffffff;
+  padding-top: 80px; /* espaço para header fixo */
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.hero-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover; /* mantém a proporção da foto dentro do círculo */
+}
+
+.social-icons-placeholder {
+  margin: 10px 0;
+}
+
+.social-icons-placeholder span {
+  margin-right: 5px;
+  font-size: 1.5rem;
+}

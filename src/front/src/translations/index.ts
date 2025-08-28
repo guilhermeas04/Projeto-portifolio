@@ -9,37 +9,37 @@ const ptTranslations: Translations = {
     contactMe: "Fale Comigo →",
   },
   hero: {
-    title: "LOREM IPSUM",
-    subtitle: "Lorem ipsum placeholder text...",
-    scrollDown: "Scroll Down ↓",
+    title: "Pedro Duarte",
+    subtitle: "Engenheiro de Software | 20 anos",
+    scrollDown: "Role para Baixo ↓",
   },
   about: {
     title: "SOBRE MIM",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "Sou Engenheiro de Software de 20 anos, apaixonado por tecnologia e inovação. Participei do HackaTruck em 2025, realizei um intercâmbio em 2024 e conquistei o título de Melhor em TI em 2024. Busco sempre unir eficiência, aprendizado e criatividade nos projetos em que atuo.",
   },
   experience: {
     title: "EXPERIÊNCIAS",
     techCorp: {
-      company: "TechCorp Solutions",
-      role: "Desenvolvedor Full Stack",
-      period: "2023 - Presente",
+      company: "E-commerce Náutico",
+      role: "Assistente",
+      period: "2023",
       description:
-        "Desenvolvi e mantive aplicações web responsivas utilizando React, Node.js e MongoDB. Implementei funcionalidades de autenticação, dashboard administrativo e integração com APIs externas. Colaborei com uma equipe de 8 desenvolvedores em metodologias ágeis.",
+        "Atuei como assistente em um e-commerce especializado na venda de barcos, auxiliando em processos digitais e suporte ao cliente.",
     },
     startupXYZ: {
-      company: "StartupXYZ",
-      role: "Desenvolvedor Frontend",
-      period: "2022 - 2023",
+      company: "Projeto de Gestão de Obra",
+      role: "Desenvolvedor Full Stack",
+      period: "2024",
       description:
-        "Criei interfaces de usuário modernas e intuitivas para aplicação mobile-first. Otimizei performance e acessibilidade, implementando design system consistente. Trabalhei com Figma para prototipagem e validação de UX.",
+        "Desenvolvi um sistema completo de gestão de obras, atuando no frontend e backend, com foco em eficiência e organização de processos.",
     },
     freelance: {
-      company: "Freelance",
-      role: "Desenvolvedor Web",
-      period: "2021 - 2022",
+      company: "HackaTruck",
+      role: "Estudante",
+      period: "2025",
       description:
-        "Desenvolvi sites institucionais e e-commerces para diversos clientes. Implementei SEO, responsividade e integração com sistemas de pagamento. Gerenciamento completo do projeto desde briefing até deploy.",
+        "Participei do programa HackaTruck Makerspace, com foco em desenvolvimento mobile, inovação e tecnologias emergentes.",
     },
   },
   projects: {
@@ -59,37 +59,37 @@ const enTranslations: Translations = {
     contactMe: "Contact Me →",
   },
   hero: {
-    title: "LOREM IPSUM",
-    subtitle: "Lorem ipsum placeholder text...",
+    title: "Pedro Duarte",
+    subtitle: "Software Engineer | 20 years old",
     scrollDown: "Scroll Down ↓",
   },
   about: {
     title: "ABOUT ME",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "I am a 20-year-old Software Engineer, passionate about technology and innovation. I participated in HackaTruck in 2025, did an exchange program in 2024, and was awarded Best in IT in 2024. I always seek to combine efficiency, continuous learning, and creativity in my projects.",
   },
   experience: {
     title: "EXPERIENCE",
     techCorp: {
-      company: "TechCorp Solutions",
-      role: "Full Stack Developer",
-      period: "2023 - Present",
+      company: "Nautical E-commerce",
+      role: "Assistant",
+      period: "2023",
       description:
-        "Developed and maintained responsive web applications using React, Node.js and MongoDB. Implemented authentication features, administrative dashboard and integration with external APIs. Collaborated with a team of 8 developers using agile methodologies.",
+        "Worked as an assistant in an e-commerce specialized in boat sales, supporting digital processes and customer service.",
     },
     startupXYZ: {
-      company: "StartupXYZ",
-      role: "Frontend Developer",
-      period: "2022 - 2023",
+      company: "Construction Management Project",
+      role: "Full Stack Developer",
+      period: "2024",
       description:
-        "Created modern and intuitive user interfaces for mobile-first applications. Optimized performance and accessibility, implementing consistent design system. Worked with Figma for prototyping and UX validation.",
+        "Developed a complete construction management system, working on both frontend and backend, focused on efficiency and process organization.",
     },
     freelance: {
-      company: "Freelance",
-      role: "Web Developer",
-      period: "2021 - 2022",
+      company: "HackaTruck",
+      role: "Student",
+      period: "2025",
       description:
-        "Developed institutional websites and e-commerces for various clients. Implemented SEO, responsiveness and integration with payment systems. Complete project management from briefing to deployment.",
+        "Participated in the HackaTruck Makerspace program, focused on mobile development, innovation, and emerging technologies.",
     },
   },
   projects: {
@@ -100,11 +100,59 @@ const enTranslations: Translations = {
   },
 };
 
+// Traduções dos projetos
+export const projectsTranslations = {
+  pt: [
+    {
+      year: "2024",
+      title: "Primeiro Projeto",
+      description: "Aplicação web simples com React e Node.js.",
+    },
+    {
+      year: "2024",
+      title: "Sistema de Gestão",
+      description: "Plataforma de controle financeiro com dashboard.",
+    },
+    {
+      year: "2024",
+      title: "E-commerce",
+      description: "Loja virtual com autenticação e carrinho de compras.",
+    },
+    {
+      year: "2025",
+      title: "Plataforma SaaS",
+      description: "Ferramenta de produtividade com integração de APIs.",
+    },
+  ],
+  en: [
+    {
+      year: "2024",
+      title: "First Project",
+      description: "Simple web application with React and Node.js.",
+    },
+    {
+      year: "2024",
+      title: "Management System",
+      description: "Financial control platform with dashboard.",
+    },
+    {
+      year: "2024",
+      title: "E-commerce",
+      description: "Online store with authentication and shopping cart.",
+    },
+    {
+      year: "2025",
+      title: "SaaS Platform",
+      description: "Productivity tool with API integrations.",
+    },
+  ],
+};
+
 // Objeto de traduções
 export const translations = {
   pt: ptTranslations,
   en: enTranslations,
 };
 
-// Re-exportar a interface para manter compatibilidade
+// Re-exportar a interface
 export type { Translations };

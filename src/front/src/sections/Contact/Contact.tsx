@@ -13,13 +13,30 @@ function Contact() {
       <FadeInWrapper delay={200}>
         <ul>
           <li>
-            <strong>in</strong> linkedin.com/user
+            <strong>in</strong>{" "}
+            <a
+              href="https://www.linkedin.com/in/pedro-duart3/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin.com/in/pedro-duart3
+            </a>
           </li>
           <li>
-            <strong>✉</strong> email@email.com.br
+            <strong>✉</strong>{" "}
+            <a href="mailto:artedudurty@gmail.com.br">
+              artedudurty@gmail.com.br
+            </a>
           </li>
           <li>
-            <strong>gh</strong> github.com/user
+            <strong>gh</strong>{" "}
+            <a
+              href="https://github.com/pedrorodriguesduarte"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/pedrorodriguesduarte
+            </a>
           </li>
         </ul>
       </FadeInWrapper>

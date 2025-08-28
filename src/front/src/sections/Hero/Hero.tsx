@@ -1,8 +1,10 @@
+import React from "react";
 import "./Hero.css";
 import FadeInWrapper from "../../components/FadeInWrapper";
 import { useLanguage } from "../../hooks/useLanguage";
+import pedroImg from "../../assets/pedro.png"; // <-- import correto
 
-function Hero() {
+const Hero: React.FC = () => {
   const { t } = useLanguage();
 
   return (
@@ -20,14 +22,15 @@ function Hero() {
           </div>
         </FadeInWrapper>
         <FadeInWrapper delay={400}>
-          <div className="hero-image-placeholder"></div>
+          <img
+            src={pedroImg} // <-- usar a variável importada
+            alt="Pedro Duarte"
+            className="hero-image"
+          />
         </FadeInWrapper>
       </div>
-      <FadeInWrapper delay={600}>
-        <div className="scroll-down">{t.hero.scrollDown}</div>
-      </FadeInWrapper>
     </section>
   );
-}
+};
 
 export default Hero;

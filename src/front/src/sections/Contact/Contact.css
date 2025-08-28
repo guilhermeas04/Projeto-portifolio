@@ -1,18 +1,35 @@
+/* Contact Section */
 .contact-section {
-    background-color: #282828;
-    color: #f0f0f0;
-    padding: 60px 50px;
-  }
-  
-  .contact-section h2 {
-    color: #fff;
-  }
-  
-  .contact-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .contact-section li {
-    margin-bottom: 15px;
-  }
+  background-color: #282828; /* Fundo escuro */
+  color: #f0f0f0; /* Texto branco */
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: #fff; /* Título branco */
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.contact-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-section li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+/* Links da seção */
+.contact-section a {
+  color: #fff; /* Links brancos */
+  text-decoration: none; /* Remove sublinhado */
+  transition: all 0.3s ease;
+}
+
+.contact-section a:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}

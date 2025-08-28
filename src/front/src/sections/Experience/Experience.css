@@ -1,5 +1,6 @@
 #experience {
   background-color: #ffffff;
+  padding: 60px 20px;
 }
 
 .experience-list {
@@ -68,15 +69,16 @@
 
 .experience-image {
   flex: 1;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.experience-image-placeholder {
-  width: 300px;
-  height: 200px;
-  background-color: #333;
+.experience-image img {
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
-  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Alternância entre direita e esquerda */
@@ -108,9 +110,8 @@
     font-size: 1rem;
   }
 
-  .experience-image-placeholder {
-    width: 250px;
-    height: 150px;
+  .experience-image img {
+    max-width: 250px;
   }
 }
 
@@ -127,8 +128,7 @@
     justify-content: center;
   }
 
-  .experience-image-placeholder {
-    width: 200px;
-    height: 120px;
+  .experience-image img {
+    max-width: 200px;
   }
 }

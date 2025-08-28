@@ -2,12 +2,18 @@ import "./Experience.css";
 import FadeInWrapper from "../../components/FadeInWrapper";
 import { useLanguage } from "../../hooks/useLanguage";
 
+// Importar imagens
+import imgTechCorp from "../../assets/Gxq3YFPqZhRwDvQgxQOLLxUB4A.png.webp";
+import imgStartup from "../../assets/LP-WEB01.png";
+import imgFreelance from "../../assets/18814g.jpg";
+
 interface ExperienceItemProps {
   company: string;
   role: string;
   period: string;
   description: string;
   technologies: string[];
+  image: string; // ← nova propriedade
   isReversed?: boolean;
   index: number;
 }
@@ -18,6 +24,7 @@ const ExperienceItem = ({
   period,
   description,
   technologies,
+  image,
   isReversed = false,
   index,
 }: ExperienceItemProps) => (
@@ -38,7 +45,7 @@ const ExperienceItem = ({
           </div>
         </div>
         <div className="experience-image">
-          <div className="experience-image-placeholder"></div>
+          <img src={image} alt={company} className="experience-image-img" />
         </div>
       </div>
     </div>
@@ -55,6 +62,7 @@ function Experience() {
       period: t.experience.techCorp.period,
       description: t.experience.techCorp.description,
       technologies: ["React", "Node.js", "MongoDB", "TypeScript", "Docker"],
+      image: imgTechCorp,
     },
     {
       company: t.experience.startupXYZ.company,
@@ -67,19 +75,15 @@ function Experience() {
         "Styled Components",
         "Figma",
       ],
+      image: imgStartup,
     },
     {
       company: t.experience.freelance.company,
       role: t.experience.freelance.role,
       period: t.experience.freelance.period,
       description: t.experience.freelance.description,
-      technologies: [
-        "HTML/CSS",
-        "JavaScript",
-        "WordPress",
-        "WooCommerce",
-        "SEO",
-      ],
+      technologies: ["Swift"],
+      image: imgFreelance,
     },
   ];
 
@@ -97,6 +101,7 @@ function Experience() {
             period={exp.period}
             description={exp.description}
             technologies={exp.technologies}
+            image={exp.image} // ← passar a imagem
             isReversed={index % 2 === 1}
             index={index}
           />

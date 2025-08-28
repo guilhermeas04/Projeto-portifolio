@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -60,4 +62,23 @@
   object-fit: contain;
   /* Opções adicionais como borda arredondada */
   border-radius: 0;
+}
+
+.pixel-font {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 2.5rem;
+  color: #dad9d7;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.blinking-cursor {
+  animation: blink 1s steps(1) infinite;
+  color: #dad9d7;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
 }

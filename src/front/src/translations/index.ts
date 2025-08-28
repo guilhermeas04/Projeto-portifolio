@@ -9,14 +9,14 @@ const ptTranslations: Translations = {
     contactMe: "Fale Comigo →",
   },
   hero: {
-    title: "Djair Augusto",
-  subtitle: "Gestor de projeto e desenvolvedor Front-end",
+    title: "Guilherme Santos",
+  subtitle: "Engenheiro de Software e Desenvolvedor Full Stack",
     scrollDown: "Saiba Mais ↓",
   },
   about: {
     title: "SOBRE MIM",
     description:
-      "Sou o Djair Augusto, estudante de Engenharia de Software na PUC Minas, com foco em desenvolvimento Front-end, dados e metodologias ágeis. Tenho experiência com ferramentas como Git, Power BI, SQL e Docker, além de projetos envolvendo React, Spring e UX/UI.\n\nFora da programação, curto arte digital e sou bem eclético nas minhas referências. Na trilha sonora, o destaque fica pro indie rock.",
+      "Sou Guilherme Santos, estudante de Engenharia de Software na PUC Minas, com foco em desenvolvimento full stack, com maior afinidade pelo back-end. Tenho experiência em linguagens como Java, C++, JavaScript e PHP, além de conhecimentos em HTML, CSS, SQL, Git e Docker. Também já desenvolvi projetos com Spring Boot, React, Angular, Laravel e Bootstrap, o que me proporcionou uma visão ampla sobre diferentes arquiteturas e tecnologias do mercado. No âmbito pessoal, sou apaixonado por esportes, especialmente futebol, sendo um torcedor fanático do Atlético Mineiro. Além disso, gosto muito de música e considero meu gosto bastante eclético.",
   },
   experience: {
     title: "EXPERIÊNCIAS",
@@ -66,7 +66,7 @@ const enTranslations: Translations = {
   about: {
     title: "ABOUT ME",
     description:
-      "I'm Djair Augusto, a Software Engineering student at PUC Minas, focused on Front-end development, data, and agile methodologies. I have experience with tools such as Git, Power BI, SQL, and Docker, as well as projects involving React, Spring, and UX/UI.\n\nOutside programming, I enjoy digital art and have eclectic references. For the soundtrack, indie rock stands out.",
+      "I'm Guilherme Santos, a Software Engineering student at PUC Minas, focused on full stack development, with a stronger affinity for back-end. I have experience in languages such as Java, C++, JavaScript and PHP, as well as knowledge in HTML, CSS, SQL, Git, and Docker. I have also developed projects using Spring Boot, React, Angular, Laravel, and Bootstrap, which has given me a broad understanding of different architectures and market technologies. In my personal life, I am passionate about sports, especially football/soccer, and a huge Atlético Mineiro fan. I also  enjoy music and consider my taste to be very eclectic.",
   },
   experience: {
     title: "EXPERIENCE",

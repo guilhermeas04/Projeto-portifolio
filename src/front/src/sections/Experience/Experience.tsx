@@ -1,10 +1,8 @@
 import "./Experience.css";
 import FadeInWrapper from "../../components/FadeInWrapper";
 import { useLanguage } from "../../hooks/useLanguage";
-import { SiAdobeaftereffects, SiAdobepremierepro, SiAdobeillustrator, SiAdobephotoshop, SiKrita } from 'react-icons/si';
-import DesignerLogo from '../../assets/desginerlogo.png';
-import pucminasLogo from "../../assets/pucminaslog.jpg";
-import drvetLogo from "../../assets/drvetlogo.png";
+import { SiPhp, SiHtml5, SiCss3, SiJavascript,SiMysql } from 'react-icons/si';
+import hinovaLogo from "../../assets/logo-hinova.png";
 
 // Ajuste o tipo Technology para usar React.ReactNode
 export type Technology = {
@@ -73,82 +71,36 @@ function Experience() {
   const experiences = language === "en"
     ? [
         {
-          company: "Freelancer",
-          role: "Graphic Designer",
-          period: "2022 - 2023",
+          company: "HINOVA Group",
+          role: "Software Development Intern",
+          period: "2024 - Present",
           description:
-            "I worked as a freelance graphic designer, creating logos, visual identities, and 3D modeling for various clients and projects. My experience includes developing visual concepts aligned with brand identity and delivering final materials in optimized digital formats. I also worked with editing and modeling software (such as Photoshop, Illustrator, and Blender), exploring creative solutions for visual communication and branding.",
+            "I work supporting the software development lifecycle, including requirements analysis, code maintenance, and implementing new features. I contribute to bug fixes, functional testing, and technical documentation, while maintaining direct contact with clients to understand their problems and ensure effective solutions. I participate in project tracking meetings, apply versioning best practices, agile methodologies, and technologies used by the team, developing practical skills in programming, problem-solving, and team work.",
           technologies: [
-            { name: "Adobe After Effects", icon: <SiAdobeaftereffects style={{ color: '#D291FF' }} /> },
-            { name: "Sony Vegas", icon: <SiAdobepremierepro style={{ color: '#1A1A1A' }} /> },
-            { name: "Adobe Illustrator", icon: <SiAdobeillustrator style={{ color: '#FF9A00' }} /> },
-            { name: "Photoshop", icon: <SiAdobephotoshop style={{ color: '#31A8FF' }} /> },
-            { name: "Krita", icon: <SiKrita style={{ color: '#3C87C3' }} /> }
+            { name: "Php", icon: <SiPhp style={{ color: '#777BB4' }} /> },
+            { name: "HTML", icon: <SiHtml5 style={{ color: '#E34F26' }} /> },
+            { name: "CSS", icon: <SiCss3 style={{ color: '#1572B6' }} /> },
+            { name: "JavaScript", icon: <SiJavascript style={{ color: '#F7DF1E' }} /> },
+            { name: "MySQL", icon: <SiMysql style={{ color: '#4479A1' }} /> }
           ],
-          image: DesignerLogo
-        },
-        {
-          company: "PUC MINAS - PROEX",
-          role: "Data Intern",
-          period: "2024 - 2025",
-          description:
-            "I worked as a data analysis intern at PUC Minas, handling, organizing, and interpreting information related to university extension projects and programs. I used tools like Power BI and Excel to build dashboards, reports, and indicators, supporting visualization and decision-making.",
-          technologies: [
-            { name: "Power BI" },
-            { name: "Excel" }
-          ],
-          image: pucminasLogo,
-        },
-        {
-          company: "Siematec Informática",
-          role: "Customer Support Intern",
-          period: "2025 - Present",
-          description:
-            "I work as a customer support intern for one of the most complete veterinary management systems in Brazil. My activities include direct customer service, requirements gathering, and monitoring system improvements, ensuring efficient platform use and contributing to the product's continuous evolution.",
-          technologies: [
-            { name: "Mirio" }
-          ],
-          image: drvetLogo,
+          image: hinovaLogo,
         },
       ]
     : [
         {
-          company: "Free Lancer",
-          role: "Designer Gráfico",
-          period: "2022 - 2023",
+          company: "Grupo HINOVA",
+          role: "Estagiário em Desenvolvimento de Software",
+          period: "2024 - Presente",
           description:
-            "Atuei como freelancer em design gráfico, desenvolvendo logotipos, identidades visuais e modelagem 3D para diferentes tipos de clientes e projetos. Minha experiência inclui desde a criação de conceitos visuais alinhados à identidade da marca até a entrega final dos materiais em formatos digitais otimizados. Também trabalhei com softwares de edição e modelagem (como Photoshop, Illustrator e Blender), explorando soluções criativas para comunicação visual e branding.",
+            "Atuo no apoio ao ciclo de desenvolvimento de sistemas, incluindo análise de requisitos, manutenção de código e implementação de novas funcionalidades. Contribuo com correções de bugs, testes funcionais e documentação técnica, mantendo contato direto com clientes para entender problemas e garantir soluções eficazes. Participo de reuniões de acompanhamento de projetos, aplico boas práticas de versionamento, metodologias ágeis e tecnologias utilizadas pela equipe, desenvolvendo habilidades práticas em programação, resolução de problemas e colaboração em equipe",
           technologies: [
-            { name: "Adobe After Effects", icon: <SiAdobeaftereffects style={{ color: '#D291FF' }} /> },
-            { name: "Sony Vegas", icon: <SiAdobepremierepro style={{ color: '#1A1A1A' }} /> },
-            { name: "Adobe Illustrator", icon: <SiAdobeillustrator style={{ color: '#FF9A00' }} /> },
-            { name: "Photoshop", icon: <SiAdobephotoshop style={{ color: '#31A8FF' }} /> },
-            { name: "Krita", icon: <SiKrita style={{ color: '#3C87C3' }} /> }
+            { name: "Php", icon: <SiPhp style={{ color: '#777BB4' }} /> },
+            { name: "HTML", icon: <SiHtml5 style={{ color: '#E34F26' }} /> },
+            { name: "CSS", icon: <SiCss3 style={{ color: '#1572B6' }} /> },
+            { name: "JavaScript", icon: <SiJavascript style={{ color: '#F7DF1E' }} /> }, 
+            { name: "MySQL", icon: <SiMysql style={{ color: '#4479A1' }} /> }
           ],
-          image: DesignerLogo
-        },
-        {
-          company: "PUC MINAS - PROEX",
-          role: "Estagiário de dados",
-          period: "2024 - 2025",
-          description:
-            "Atuei como estagiário de análise de dados na PUC Minas, realizando tratamento, organização e interpretação de informações relacionadas a projetos e programas de extensão da universidade. Utilizei ferramentas como Power BI e Excel para construção de dashboards, relatórios e indicadores, apoiando na visualização e tomada de decisão.",
-          technologies: [
-            { name: "Power BI" },
-            { name: "Excel" }
-          ],
-          image: pucminasLogo,
-        },
-        {
-          company: "Siematec Informática",
-          role: "Estagiário de suporte ao cliente",
-          period: "2025 - Presente",
-          description:
-            "Atuo como estagiário de suporte ao cliente em um dos sistemas de gestão veterinária mais completos do Brasil. Minhas atividades incluem o atendimento direto aos clientes, o levantamento de requisitos e o acompanhamento de melhorias no sistema, garantindo eficiência no uso da plataforma e contribuindo para a evolução contínua do produto.",
-          technologies: [
-            { name: "Mirio" }
-          ],
-          image: drvetLogo,
+          image: hinovaLogo,
         },
       ];
 

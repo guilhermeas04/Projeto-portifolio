@@ -11,11 +11,11 @@ function Header() {
     <header className="header">
       <FadeInWrapper>
         <div className="logo">
-          <img
+          {/* <img
             src={HeaderIcon}
             alt="Logo"
             style={{ height: "64px", maxHeight: "100%", width: "auto" }}
-          />
+          /> */}
         </div>
       </FadeInWrapper>
       <FadeInWrapper delay={200}>

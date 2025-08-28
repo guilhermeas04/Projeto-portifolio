@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Hero.css";
 import FadeInWrapper from "../../components/FadeInWrapper";
 import { useLanguage } from "../../hooks/useLanguage";
-import suaFoto from '../../assets/profile_picture.png';
+import suaFoto from '../../assets/profile_picture.jpeg';
 
 function Hero() {
   const { t } = useLanguage();

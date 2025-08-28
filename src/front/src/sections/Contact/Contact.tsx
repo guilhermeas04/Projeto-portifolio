@@ -20,7 +20,7 @@ function Contact() {
             <li>
               <FaLinkedin size={28} />
               <a
-                href="https://br.linkedin.com/in/djairaugusto"
+                href="https://www.linkedin.com/in/guilherme-santos-47b2aa281"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -29,12 +29,12 @@ function Contact() {
             </li>
             <li>
               <HiOutlineMail size={28} />
-              <a href="mailto:djairaugusto08@gmail.com">Email</a>
+              <a >Email - guilhermesantos_@outlook.com</a>
             </li>
             <li>
               <FaGithub size={28} />
               <a
-                href="https://github.com/DjairAugusto"
+                href="https://github.com/guilhermeas04"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -44,7 +44,7 @@ function Contact() {
             <li>
               <FaInstagram size={28} />
               <a
-                href="https://instagram.com/user"
+                href="https://www.instagram.com/guilhermeas__"
                 target="_blank"
                 rel="noreferrer"
               >

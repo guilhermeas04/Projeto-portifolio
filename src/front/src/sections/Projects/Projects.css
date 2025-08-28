@@ -119,13 +119,40 @@
 /* Responsividade */
 @media screen and (max-width: 768px) {
   .timeline-step {
-    width: 90%;
+    width: 98vw;
     left: 0 !important;
     text-align: center !important;
     margin: 20px auto;
+    padding: 12px 4px;
   }
-
-  .timeline-container::before {
-    left: 20px; /* Linha lateral no mobile */
+  .timeline-container {
+    max-width: 100vw;
+    padding: 0 2vw;
+  }
+  .timeline-image {
+    height: 120px;
+    max-width: 90vw;
+  }
+  .timeline-year {
+    font-size: 1.1rem;
+  }
+  .timeline-step h3 {
+    font-size: 1.3rem;
+  }
+  .project-languages {
+    gap: 8px;
+    font-size: 0.95rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .timeline-step {
+    padding: 8px 2px;
+  }
+  .timeline-image {
+    height: 80px;
+    max-width: 98vw;
+  }
+  .timeline-step h3 {
+    font-size: 1.1rem;
   }
 }

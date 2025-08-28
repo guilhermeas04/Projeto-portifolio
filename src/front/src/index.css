@@ -13,3 +13,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+  .App {
+    padding: 0 2vw;
+  }
+  main {
+    padding-top: 60px;
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .App {
+    padding: 0 1vw;
+  }
+  main {
+    padding-top: 40px;
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+}

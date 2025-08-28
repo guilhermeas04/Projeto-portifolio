@@ -4,8 +4,9 @@ import FadeInWrapper from "../../components/FadeInWrapper";
 import { useLanguage } from "../../hooks/useLanguage";
 import GifRoutine from '../../assets/GifRoutine.gif';
 import CitLog from '../../assets/CitLog.png';
+import CProjectImg from '../../assets/Cproject.png';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaDocker } from 'react-icons/fa';
-import { SiSpringboot } from 'react-icons/si';
+import { SiSpringboot, SiC } from 'react-icons/si';
 
 type Project = {
   year: string;
@@ -16,32 +17,39 @@ type Project = {
   repo?: string;
 };
 
-const projects: Project[] = [
-  {
-    year: "2024",
-    title: "Clever Routine",
-    description: `Ferramenta online para ajudar os usuários a gerenciar o tempo de estudo de forma eficiente e evitar a procrastinação.\n\n- Sistema de calendário\n- Método Pomodoro\n- Playlist musical\n- Sistema de conquistas`,
-    image: GifRoutine,
-    languages: ["HTML", "CSS", "JavaScript"]
-  },
-  {
-    year: "2024",
-    title: "CIT",
-    description: `Sistema para gestão de condomínios residenciais, focado em comunicação eficiente, automação de tarefas administrativas e uso das áreas comuns. Interface simples e intuitiva para administração e moradores.`,
-    image: CitLog,
-    languages: ["Docker", "React", "HTML", "CSS", "JavaScript", "Spring Boot"],
-    repo: "https://github.com/DjairAugusto/CIT"
-  },
-  {
-    year: "2023",
-    title: "E-commerce",
-    description: "Loja virtual com autenticação e carrinho de compras.",
-    image: "/images/project3.png"
-  }
-];
-
 function Projects() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const projects: Project[] = [
+    {
+      year: "2024",
+      title: language === "en" ? "Clever Routine" : "Clever Routine",
+      description: language === "en"
+        ? `Online tool to help users efficiently manage study time and avoid procrastination.\n\n- Calendar system\n- Pomodoro method\n- Music playlist\n- Achievement system`
+        : `Ferramenta online para ajudar os usuários a gerenciar o tempo de estudo de forma eficiente e evitar a procrastinação.\n\n- Sistema de calendário\n- Método Pomodoro\n- Playlist musical\n- Sistema de conquistas`,
+      image: GifRoutine,
+      languages: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      year: "2024",
+      title: language === "en" ? "CIT" : "CIT",
+      description: language === "en"
+        ? `System for managing residential condominiums, focused on efficient communication, automation of administrative tasks, and use of common areas. Simple and intuitive interface for administration and residents.`
+        : `Sistema para gestão de condomínios residenciais, focado em comunicação eficiente, automação de tarefas administrativas e uso das áreas comuns. Interface simples e intuitiva para administração e moradores.`,
+      image: CitLog,
+      languages: ["Docker", "React", "HTML", "CSS", "JavaScript", "Spring Boot"],
+      repo: "https://github.com/DjairAugusto/CIT"
+    },
+    {
+      year: "2024",
+      title: language === "en" ? "Hotel in C" : "Hotel em C",
+      description: language === "en"
+        ? `Hotel management system written in C. Allows registration and management of clients, employees, rooms, and stays, including stay completion and searches.\n\n- Register Client and Employee\n- Register Room and Stay\n- Complete Stay\n- Search Client or Employee\n- Show Client's Stays`
+        : `Sistema de gerenciamento de hotel escrito em C. Permite cadastro e gerenciamento de clientes, funcionários, quartos e estadias, incluindo finalização de estadias e pesquisas.\n\n- Cadastrar Cliente e Funcionário\n- Cadastrar Quarto e Estadia\n- Finalizar Estadia\n- Pesquisar Cliente ou Funcionário\n- Mostrar Estadias de um Cliente`,
+      image: CProjectImg,
+      languages: ["C"],
+      repo: "https://github.com/DjairAugusto/Hotelem"
+    }
+  ];
   const [visible, setVisible] = useState(Array(projects.length).fill(false));
   const stepsRef = useRef<(HTMLDivElement | null)[]>([]);
   const timelineRef = useRef<HTMLDivElement | null>(null);
@@ -68,14 +76,22 @@ function Projects() {
     return () => observer.disconnect();
   }, []);
 
-  // Calcula a altura da linha central baseada nos projetos visíveis
   useEffect(() => {
     if (timelineRef.current) {
-      // Garante que a linha central sempre vai até o final da timeline
-      const container = timelineRef.current.parentElement;
-      if (container) {
-        timelineRef.current.style.height = `${container.scrollHeight}px`;
-      }
+      // Calcula a altura da linha central baseada nos projetos visíveis
+      let height = 0;
+      stepsRef.current.forEach((el, idx) => {
+        if (el && visible[idx] && timelineRef.current) {
+          const rect = el.getBoundingClientRect();
+          const containerRect = timelineRef.current.parentElement?.getBoundingClientRect();
+          if (containerRect) {
+            const bottom = rect.bottom - containerRect.top;
+            if (bottom > height) height = bottom;
+          }
+        }
+      });
+      // Altura mínima para garantir que a linha aparece no início
+      timelineRef.current.style.height = `${Math.max(height, 100)}px`;
     }
   }, [visible]);
 
@@ -113,6 +129,15 @@ function Projects() {
                 >
                   {project.title}
                 </a>
+              ) : project.title === "Hotel em C" && project.repo ? (
+                <a
+                  href={project.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: '#dad9d7', textDecoration: 'underline', cursor: 'pointer' }}
+                >
+                  {project.title}
+                </a>
               ) : (
                 project.title
               )}
@@ -133,6 +158,7 @@ function Projects() {
                     {lang === 'React' && <FaReact style={{ color: '#61dafb' }} />}
                     {lang === 'Docker' && <FaDocker style={{ color: '#2496ed' }} />}
                     {lang === 'Spring Boot' && <SiSpringboot style={{ color: '#6db33f' }} />}
+                    {lang === 'C' && <SiC style={{ color: '#A8B9CC' }} />}
                     <span style={{ color: '#dad9d7', marginLeft: 2 }}>{lang}</span>
                   </span>
                 ))}

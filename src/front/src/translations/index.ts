@@ -50,7 +50,7 @@ const ptTranslations: Translations = {
   },
 };
 
-// Traduções em inglês
+// Traduções em inglês atualizadas
 const enTranslations: Translations = {
   header: {
     about: "ABOUT ME",
@@ -60,13 +60,13 @@ const enTranslations: Translations = {
   },
   hero: {
     title: "Djair Augusto",
-  subtitle: "Project manager and Front-end developer",
-    scrollDown: "Scroll Down ↓",
+    subtitle: "Project manager and Front-end developer",
+    scrollDown: "Learn More ↓",
   },
   about: {
     title: "ABOUT ME",
     description:
-      "I'm Djair Augusto, a Software Engineering student at PUC Minas, focused on Front-end development, data, and agile methodologies. I have experience with tools like Git, Power BI, SQL, and Docker, as well as projects involving React, Spring, and UX/UI.\n\nOutside programming, I enjoy digital art and have eclectic references. For the soundtrack, indie rock stands out.",
+      "I'm Djair Augusto, a Software Engineering student at PUC Minas, focused on Front-end development, data, and agile methodologies. I have experience with tools such as Git, Power BI, SQL, and Docker, as well as projects involving React, Spring, and UX/UI.\n\nOutside programming, I enjoy digital art and have eclectic references. For the soundtrack, indie rock stands out.",
   },
   experience: {
     title: "EXPERIENCE",
@@ -75,21 +75,21 @@ const enTranslations: Translations = {
       role: "Full Stack Developer",
       period: "2023 - Present",
       description:
-        "Developed and maintained responsive web applications using React, Node.js and MongoDB. Implemented authentication features, administrative dashboard and integration with external APIs. Collaborated with a team of 8 developers using agile methodologies.",
+        "Developed and maintained responsive web applications using React, Node.js, and MongoDB. Implemented authentication features, administrative dashboard, and integration with external APIs. Collaborated with a team of 8 developers using agile methodologies.",
     },
     startupXYZ: {
       company: "StartupXYZ",
       role: "Frontend Developer",
       period: "2022 - 2023",
       description:
-        "Created modern and intuitive user interfaces for mobile-first applications. Optimized performance and accessibility, implementing consistent design system. Worked with Figma for prototyping and UX validation.",
+        "Created modern and intuitive user interfaces for mobile-first applications. Optimized performance and accessibility, implementing a consistent design system. Worked with Figma for prototyping and UX validation.",
     },
     freelance: {
       company: "Freelance",
       role: "Web Developer",
       period: "2021 - 2022",
       description:
-        "Developed institutional websites and e-commerces for various clients. Implemented SEO, responsiveness and integration with payment systems. Complete project management from briefing to deployment.",
+        "Developed institutional websites and e-commerces for various clients. Implemented SEO, responsiveness, and integration with payment systems. Complete project management from briefing to deployment.",
     },
   },
   projects: {

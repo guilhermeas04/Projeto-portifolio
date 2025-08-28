@@ -64,3 +64,28 @@ html {
     transition: none;
   }
 }
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 60px;
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 24px;
+  }
+  .App {
+    padding: 0 2vw;
+  }
+}
+@media (max-width: 480px) {
+  main {
+    padding-top: 40px;
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+  .App {
+    padding: 0 1vw;
+  }
+}

@@ -68,3 +68,6 @@ Histórico profissional e acadêmico, destacando funções, responsabilidades e 
 ```
 
 O front-end agora utiliza Vite e está localizado em `src/front`. O back-end está em `src/back`.
+
+## Deploy do Portifólio
+Link: https://portifolio-guilherme1-89xkmdg5q-guilhermeas04s-projects.vercel.app/
